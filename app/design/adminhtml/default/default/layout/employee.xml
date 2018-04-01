@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout>
+   <adminhtml_emp_index>
+        <reference name="content">
+            <block type="emp/adminhtml_emp" name="emp" />
+        </reference>
+    </adminhtml_emp_index>
+     <adminhtml_emp_edit>
+        <reference name="content">
+            <block type="emp/adminhtml_emp_edit" name="emp_edit" />
+        </reference>
+    </adminhtml_emp_edit>
+</layout>

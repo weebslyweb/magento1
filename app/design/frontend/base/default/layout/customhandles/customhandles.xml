@@ -1,0 +1,6 @@
+<catalog_product_new_handle translate="label">
+     <label>Custom Product View Based on New Handle</label>
+     <reference name="content">
+         <block type="catalog/product_view" name="product.info" template="customhandles/newview.phtml"></block>
+     </reference>
+</catalog_product_new_handle>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Weebsly_Customshipping>
+			<version>0.0.1</version>
+		</Weebsly_Customshipping>
+	</modules>
+	<frontend>
+			<routers>
+				<customshipping>
+					<use>standard</use>
+					<args>
+						<module>Weebsly_Customshipping</module>
+						<frontName>customshipping</frontName>
+					</args>
+				</customshipping>
+			</routers>
+		</frontend>
+		<default>
+        <carriers>
+          <customshipping>
+               <active>1</active>
+               <model>customshipping/carrier_customship</model>
+               <title>Carrier Title</title>
+               <name>Method Name</name>
+               <price>5.00</price>
+               <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+            </customshipping>
+         </carriers>
+       </default>
+       <global>
+       	<helpers>
+            <customshipping>
+                <class>Weebsly_Customshipping_Helper</class>
+            </customshipping>
+        </helpers>
+        <models>
+             <customshipping>
+                <class>Weebsly_Customshipping_Model</class>
+             </customshipping>
+        </models>
+       </global>
+</config>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Weebsly_Cprice>
+			<version>0.0.1</version>
+		</Weebsly_Cprice>
+	</modules>
+	<frontend>
+		<events>
+			 <checkout_cart_product_add_after>
+			 	<observers>
+			 		<Weebsly_Cprice_Model_Observer>
+			 			<type>singleton</type>
+			 			<class>Weebsly_Cprice_Model_Observer</class>
+			 			<method>setcustomprice</method>
+			 		</Weebsly_Cprice_Model_Observer>
+			 	</observers>
+			 </checkout_cart_product_add_after>
+		</events>
+	</frontend>
+</config>

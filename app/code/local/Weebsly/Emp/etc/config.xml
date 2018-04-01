@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Weebsly_Emp>
+			<version>0.0.1</version>
+		</Weebsly_Emp>
+	</modules>
+	<!-- admin grid code start -->
+    <admin>
+        <routers>
+          <adminhtml>
+            <args>
+              <modules>
+                <emp before="Mage_Adminhtml">Weebsly_Emp_Adminhtml</emp>
+              </modules>
+            </args>
+          </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+          <updates>
+            <emp>
+              <file>employee.xml</file>
+            </emp>
+          </updates>
+        </layout>
+    </adminhtml>
+    <!-- admin grid code end -->
+	<frontend>
+		<routers>
+			<emp>
+				<use>standard</use>
+				<args>
+					<module>Weebsly_Emp</module>
+					<frontName>emp</frontName>
+				</args>
+			</emp>
+		</routers>
+	</frontend>
+	<global>
+		<models>
+			<emp>
+				<class>Weebsly_Emp_Model</class>
+				<resourceModel>emp_resource</resourceModel>
+			</emp>
+			<emp_resource>
+				<class>Weebsly_Emp_Model_Resource</class>
+				<entities>
+					<employee>
+						<table>empdata</table>
+					</employee>
+				</entities>
+			</emp_resource>
+		</models>
+		<resources>
+			<emp_setup>
+				<setup>
+					<module>Weebsly_Emp</module>
+					<class>Weebsly_Emp_Model_Resource_Setup</class>
+				</setup>
+			</emp_setup>
+		</resources>
+
+		<blocks>
+			<emp>
+				<class>Weebsly_Emp_Block</class>
+			</emp>
+		</blocks>
+		<helpers>
+			<emp>
+				<class>Weebsly_Emp_Helper</class>
+			</emp>
+		</helpers>
+	</global>
+</config>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout>
+   <adminhtml_photograph_index>
+        <reference name="content">
+            <block type="photo/adminhtml_photograph" name="photograph" />
+        </reference>
+    </adminhtml_photograph_index>
+     <adminhtml_photograph_edit>
+        <reference name="content">
+            <block type="photo/adminhtml_photograph_edit" name="photograph_edit" />
+        </reference>
+    </adminhtml_photograph_edit>
+</layout>

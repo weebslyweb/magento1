@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Weebsly_Dbscript>
+			<version>0.0.1</version>
+		</Weebsly_Dbscript>
+	</modules>
+	<frontend>
+		<routers>
+			<formdata>
+				<use>standard</use>
+				<args>
+					<module>Weebsly_Dbscript</module>
+					<frontName>formdata</frontName>
+				</args>
+			</formdata>
+		</routers>
+	</frontend>
+	<global>
+		<models>
+			<dbscript>
+				<class>Weebsly_Dbscript_Model</class>
+				<resourceModel>dbscript_resource</resourceModel>
+			</dbscript>
+			<dbscript_resource>
+				<class>Weebsly_Dbscript_Model_Resource</class>
+				<entities>
+					<formdata>
+						<table>form1data</table>
+					</formdata>
+				</entities>
+			</dbscript_resource>
+		</models>
+		<resources>
+			<dbscript_setup>
+				<setup>
+					<module>Weebsly_Dbscript</module>
+					<class>Weebsly_Dbscript_Model_Resource_Setup</class>
+				</setup>
+			</dbscript_setup>
+		</resources>
+	</global>
+</config>

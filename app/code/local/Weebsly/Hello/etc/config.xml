@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Weebsly_Hello>
+			<version>0.0.1</version>
+		</Weebsly_Hello>
+	</modules>
+		<frontend>
+			<routers>
+				<hello>
+					<use>standard</use>
+					<args>
+						<module>Weebsly_Hello</module>
+						<frontName>hello</frontName>
+					</args>
+				</hello>
+			</routers>
+		</frontend>
+</config>

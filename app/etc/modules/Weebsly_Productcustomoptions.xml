@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Weebsly_Productcustomoptions>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Weebsly_Productcustomoptions>
+    </modules>
+</config>
